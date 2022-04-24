@@ -12,10 +12,10 @@ function Header() {
                     <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='ms-auto'>
                             <Nav.Link>
-                                <ModalComponent titleLogin="Login"   />
+                                <ModalComponent btnLogin="Login"   />
                             </Nav.Link>
                             <Nav.Link>
-                                <ModalComponent titleRegister="Register"  />
+                                <ModalComponent btnRegister="Register"  />
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

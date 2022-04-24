@@ -11,7 +11,7 @@ module.exports = (app) => {
     router.put('/posts/:id', auth, posts.update)
     router.delete('/posts/:id', auth, posts.delete)
 
-    router.get('/users',auth,users.findAll)
+    router.get('/users',users.findAll)
     router.post('/register',users.register)
     router.post('/login',users.login)
     router.delete('/user/:id', auth, users.deleteUser)
