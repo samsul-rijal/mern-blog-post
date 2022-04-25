@@ -4,7 +4,7 @@ function Input({label, ...rest}) {
   return (
     <div>
         <label className='form-label'>{label}</label>
-        <input type="text" className='form-control' {...rest} />
+        <input className='form-control' {...rest} />
     </div>
   )
 }

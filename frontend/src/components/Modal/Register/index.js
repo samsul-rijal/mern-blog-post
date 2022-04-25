@@ -27,6 +27,12 @@ function Register(props) {
         e.preventDefault();
 
         dispatch(register(form))
+
+        setForm({
+            name:'',
+            email:'',
+            password:''
+        })
     }
 
     return (
@@ -37,11 +43,11 @@ function Register(props) {
                 </Modal.Header>
                 <p className='mx-auto'>{registerResult ? 'Register Success' : registerError}</p>
                 <Modal.Body>
-                    <Input label="Name" name="name" value={form.name} onChange={handleChange} />
+                    <Input label="Name" type="text" name="name" value={form.name} onChange={handleChange} required/>
                     <Gap height={12} />
-                    <Input label="Email" name="email" value={form.email} onChange={handleChange} />
+                    <Input label="Email" type="email" name="email" value={form.email} onChange={handleChange} required/>
                     <Gap height={12} />
-                    <Input label="Passsword" name="password" value={form.password} onChange={handleChange} />
+                    <Input label="Passsword" type="password" name="password" value={form.password} onChange={handleChange} required/>
                 </Modal.Body>
                 <Modal.Footer>
                     <div className="d-grid gap-2 col-12">
